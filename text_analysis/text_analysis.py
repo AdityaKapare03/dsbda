@@ -23,7 +23,7 @@ print(pos_tags)
 
 stop_words = set(stopwords.words('english'))
 filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
-print('After stop words removal: ', filtered_words)
+print('After stop words removal: ', filtered_tokens)
 
 stemmer = PorterStemmer()
 stemmed_tokens = [stemmer.stem(word) for word in filtered_tokens]
